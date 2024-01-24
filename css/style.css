@@ -9,9 +9,13 @@ html{
   html,body{
       height: 100%;
   }
+:root{
+  --primary-light:#DECBA8;
+  --primary-dark: #A26E4A;
 
+}
 body{
-  background-color: beige;
+  background-color: var(--primary-light);
 }
 
 img {
@@ -19,8 +23,15 @@ img {
   height: auto;
 }
 
-/*hamburger-menu*/
+header{
+  height: 100vh;
+}
 
+.header__img{
+  height: auto;
+}
+
+/*hamburger-menu*/
 #menu__toggle {
   opacity: 0;
 }
@@ -40,8 +51,8 @@ img {
 }
 
 .menu__btn span{
-  top: 45%; 
-  right: 25%;
+  top: 47%; 
+  right: 26%;
 }
 
 .menu__btn {
@@ -54,6 +65,7 @@ img {
   top: 3vh; 
   right: 5vw; 
   z-index: 2000;
+  border: 2px solid white;
   text-align: center; 
 }
 .menu__btn > span,
@@ -75,16 +87,36 @@ img {
   top: 8px;
 }
 .menu__box {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 10% 10% 10% 10% 10% 40% 10%;
   background-color: #FFFFFF;
   position: fixed;
   top: 0;
-  padding: 3rem;
   height: 100vh;
-  width: 60vw;
+  width: 85vw;
   right: -100%;
   z-index: 1500;
   transition: all 0.8s;
 }
+
+.menu__train{
+  grid-row: 1;
+  grid-column: 2;
+  margin-left: -3rem;
+}
+
+.menu__logo{
+  grid-row: 7 ;
+  grid-column: 3;
+
+}
+
+.menu{
+  grid-row: 2;
+  grid-column: 2;
+}
+
 .menu__item {
   display: block;
   padding: 12px 24px;

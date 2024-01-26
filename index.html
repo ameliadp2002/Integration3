@@ -9,6 +9,7 @@
 </head>
 
 <body>
+  <div class="container">
   <header class="header">
 
     <section class="header__content">
@@ -67,14 +68,34 @@
       <article>
         <h3>1814</h3>
         <p>In 1814 he built his first steam locomotive, which could transport 30 tons of coals at 4 miles per hour.</p>
+        <div class="audio-player medal__button">
+          <audio controls>
+              <source src="/assets/sound/Amelia_trein_mixdown.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+          </audio>
+          <button class="play-button" onclick="toggleAudio()">▶️</button>
+      </div>
       </article>
 
-      <article>
+      <article class="visually-hidden">
         <h3>1825</h3>
         <p>In 1825 he designed The Locomotion, considered to be the first serviceable locomotive. It transported no less
           than 80 tons of coal at 24 miles per hour. That speed was unheard of at the time!</p>
+          <div class="medal__button">
+            <audio controls>
+                <source src="/assets/sound/Amelia_trein_mixdown.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <button class="play-button" onclick="toggleAudio()">▶️</button>
+        </div>
       </article>
     </section>
+
+    <div class="train__interaction">
+      <img class="tree__background" src="/assets/img/background_train.png">
+      <img class="train" src="/assets/img/train.png">
+      <iframe class="stones" src="https://lottie.host/embed/2908a6d8-6926-44b4-be2f-b1ba3287a79f/6zfgUlEG9j.json"></iframe>
+    </div>
 
     <section class="Omelettes">
       <h2>“The eggs will arrive like omelettes”</h2>
@@ -129,6 +150,7 @@
         had such a big impact that only six years later, I had my own luxurious carriage built.</p>
     </section>
   </main>
+</div>
 
 </body>
 

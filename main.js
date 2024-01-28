@@ -33,3 +33,5 @@ document.addEventListener("DOMContentLoaded", function() {
   // You can also use event delegation to handle the click event on the play button
   document.querySelector('.audio-player button.play-button').addEventListener('click', toggleAudio);
 });
+
+

@@ -26,11 +26,11 @@
 
         <div class="menu__box">
           <ul class="menu">
-            <li><a class="menu__item" href="#">Intro</a></li>
-            <li><a class="menu__item" href="#">A medal</a></li>
-            <li><a class="menu__item" href="#">Omelettes</a></li>
-            <li><a class="menu__item" href="#">Let's roll</a></li>
-            <li><a class="menu__item" href="#">Own train</a></li>
+            <li><a class="menu__item" href="#intro">Intro</a></li>
+            <li><a class="menu__item" href="#medal">A medal</a></li>
+            <li><a class="menu__item" href="#omlettes">Omelettes</a></li>
+            <li><a class="menu__item" href="#roll">Let's roll</a></li>
+            <li><a class="menu__item" href="#train">Own train</a></li>
           </ul>
           <img class="menu__train" src="./assets/img/nav-train.png">
           <img class="menu__logo" src="./assets/img/logo.svg">
@@ -41,7 +41,7 @@
 
     <main>
 
-      <section class="intro">
+      <section class="intro" id="intro">
         <iframe class="intro__img"
           src="https://lottie.host/embed/9a12bb6c-4f4f-4bfe-aa7a-4da2b5d2e247/Ffx560AeC9.json"></iframe>
         <p class="intro__text">As the very first king of the Belgians it is my pleasure to share my story with you. I
@@ -62,7 +62,7 @@
       </section>
 
 
-      <section class="medal">
+      <section class="medal" id="medal">
         <h2 class="medal__title">"Give that man a medal"</h2>
         <p class="medal__text">Stephenson began his career at Killingworth Pit. As a maintenance engineer he was allowed
           by the managers to
@@ -104,7 +104,7 @@
           src="https://lottie.host/embed/2908a6d8-6926-44b4-be2f-b1ba3287a79f/6zfgUlEG9j.json"></iframe>
       </div>
 
-      <section class="omelettes">
+      <section class="omelettes" id="omlettes">
         <h2 class="visually-hidden">“The eggs will arrive like omelettes”</h2>
 
         <picture class="omelettes__leopold">
@@ -178,45 +178,92 @@
 
       </section>
 
-      <section class="roll">
+      <section class="roll" id="roll">
+        <picture class="visually-hidden">
+          <source media="(min-width:1200px)" srcset="/assets/img/roll/train/rolltrain.avif" type="image/avif">
+          <source media="(min-width:1200px)" srcset="/assets/img/roll/train/rolltrain.webp" type="image/webp">
+
+          <source media="(min-width:750px)" srcset="/assets/img/roll/train/rolltrain-250.avif"
+            type="image/avif">
+          <source media="min-width:750px" srcset="/assets/img/roll/train/rolltrain.webp" type="image/webp">
+
+          <source srcset="/assets/img/roll/train/rolltrain-500.avif" type="image/avif">
+          <source srcset="/assets/img/roll/train/rolltrain-500.webp" type="image/webp">
+
+          <img src="/assets/img/rolltrain.png" alt="train">
+        </picture>
+
+        
+
+        <picture class="roll__train">
+          <source media="(min-width:1200px)" srcset="/assets/img/roll/phone/phone_train.avif" type="image/avif">
+          <source media="(min-width:1200px)" srcset="/assets/img/roll/phone/phone_train.webp" type="image/webp">
+
+          <source media="(min-width:750px)" srcset="/assets/img/roll/phone/phone_train-250.avif"
+            type="image/avif">
+          <source media="min-width:750px" srcset="/assets/img/roll/phone/phone_train.webp" type="image/webp">
+
+          <source srcset="/assets/img/roll/phone/phone_train.avif" type="image/avif">
+          <source srcset="/assets/img/roll/phone/phone_train.webp" type="image/webp">
+
+          <img src="/assets/img/phone_train.png" alt="train">
+        </picture>
         <h2>Let's roll</h2>
-        <p>Finally, on May 5, 1835, the moment arrived. Belgium was the first country on the European continent to open
+        <p class="roll__intro">Finally, on May 5, 1835, the moment arrived. Belgium was the first country on the European continent to open
           a
           public railway and I had the honour of inaugurating it. Brussels was the first capital in the world to have a
           rail connection: a 22 kilometre long railway line to Mechelen.</p>
-
+<div class="roll__trees">
         <p>It was quite a spectacle: throngs of spectators showed up. They sat in trees and on roofs, there wasn't any
           space left. You couldn't begin to describe just how excited the crowd was: it was as if they could feel that a
           new era was about to begin.</p>
+          <div class="roll__button">
+            <audio controls>
+              <source src="/assets/sound/Amelia_trein_mixdown.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <button class="play-button" onclick="toggleAudio()">▶️</button>
+          </div>
+          <img src="/assets/img/trees.png">
+</div>
 
-        <p>3 giants: La Flèche (the arrow), the Stephenson and L'Eléphant (the elephant)</p>
+        <p class="roll__names">3 giants: La Flèche (the arrow), the Stephenson and L'Eléphant (the elephant)</p>
 
-        <p>That day 900 guests travelled from Brussels-Allée Verte to Mechelen. The convoy consisted of three trains,
+        <p class="roll__text">That day 900 guests travelled from Brussels-Allée Verte to Mechelen. The convoy consisted of three trains,
           each
           pulled by a fabulous new steam engine: La Flèche, the Stephenson and L'Eléphant. Passengers were seated in 30
           carriages, adorned with the national tricolour flag. There were simple open and covered bench wagons. But some
           more luxurious carriages for the important guests.</p>
 
-        <p>The locomotives were like mysterious monsters. They were loud and had high chimneys from which smoke poured
+        <p class="roll__text">The locomotives were like mysterious monsters. They were loud and had high chimneys from which smoke poured
           out
           continuously. On an open platform with a railing stood the driver. As he was standing there proudly, he truly
           seemed to tame the monster.</p>
 
-        <p>Although the train could reach speeds of 60 km per hour it was driven more slowly in the beginning, so as to
+        <p class="roll__text">Although the train could reach speeds of 60 km per hour it was driven more slowly in the beginning, so as to
           make everyone feel at ease. This despite the fact that there were positive reports of the first test drives at
           full speed:</p>
 
-        <p>“We have to point out that this new method of transport does not affect the breathing. People are not at all
+        <p class="roll__text">“We have to point out that this new method of transport does not affect the breathing. People are not at all
           suffering any discomfort in the open wagons.“</p>
+
+          
       </section>
 
-      <section class="train">
+      <section class="own" id="train">
         <h2>My own train</h2>
         <p>Sadly, for safety reasons, I was not able to travel as a passenger myself on that historic day. However, rail
           had such a big impact that only six years later, I had my own luxurious carriage built.</p>
       </section>
     </main>
   </div>
+
+  <footer>
+    <a>Tickets</a>
+    <h2>Address:</h2>
+    <p> Pl. Princesse Elisabeth 5, 1030 Schaerbeek</p>
+
+  </footer>
 
 </body>
 

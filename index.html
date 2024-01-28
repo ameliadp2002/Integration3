@@ -251,17 +251,25 @@
       </section>
 
       <section class="own" id="train">
-        <h2>My own train</h2>
-        <p>Sadly, for safety reasons, I was not able to travel as a passenger myself on that historic day. However, rail
+        <h2 class="own__title">My own train</h2>
+        <p class="own__text">Sadly, for safety reasons, I was not able to travel as a passenger myself on that historic day. However, rail
           had such a big impact that only six years later, I had my own luxurious carriage built.</p>
+          <div class="own__button">
+            <audio controls>
+              <source src="/assets/sound/Amelia_trein_mixdown.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <button class="play-button" onclick="toggleAudio()">▶️</button>
+          </div>
       </section>
     </main>
   </div>
 
   <footer>
-    <a>Tickets</a>
-    <h2>Address:</h2>
-    <p> Pl. Princesse Elisabeth 5, 1030 Schaerbeek</p>
+    <a class="tickets" href="https://www.trainworld.be/en">Tickets</a>
+    <h2 class="address__title">Address:</h2>
+    <p class="address__text"> Pl. Princesse Elisabeth 5,<br> 1030 Schaerbeek</p>
+    <img class="footer__logo" src="./assets/img/logo.svg">
 
   </footer>
 

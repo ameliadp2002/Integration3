@@ -447,6 +447,7 @@ margin-top: -2rem;
   grid-column: 1;
 
   margin-left: -4vw;
+  margin-top: 3rem;
 }
 .roll__trees p{
   grid-row: 1;
@@ -486,11 +487,78 @@ margin-top: -2rem;
 }
 
 .own{
-  display: flex;
+  padding-bottom: 10vh;
 }
 
+.own__title{
+ margin-inline: 25vw;
 
+ font-size: var(--step-4);
+ color: var(--accent-red);
+ margin-bottom: 4vh;
+}
 
+.own__text{
+  line-height: 1.2rem;
+  background-color: var(--accent-red);
+  color: var(--primary-light);
+  padding:15% 10% 20% 10% ;
+  border-radius: 5vw;
+  height: 8vh;
+  width:70vw;
+  margin-inline:5vw;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+}
+
+.own__button{
+  display: flex;
+  justify-content: center;
+  margin-top: -5vh;
+  z-index: 5;
+}
+
+footer{
+  background-image:url("/assets/img/texture.png") ;
+  background-repeat: repeat;
+  background-color: #70322E;
+
+  height:fit-content;
+
+  padding-top: 10vh;
+}
+
+.tickets{
+text-decoration: none;
+color: var(--accent-red);
+padding: 1rem 2rem 1rem 2rem;
+font-size: var(--step-2);
+border-radius: 20px;
+background-color: var(--color-white);
+
+margin-left: 33vw;
+}
+
+.address__title{
+  color: var(--color-white);
+  font-size: var(--step-2);
+  margin: 3rem 2rem 0.5rem 3rem;
+}
+
+.address__text{
+  line-height: 1.2rem;
+  color: var(--color-white);
+  font-size: var(--step-0);
+  margin-left: 3rem;
+  margin-bottom: 1rem;
+}
+
+.footer__logo{
+margin-left: 80vw;
+margin-top: 5vh;
+margin-bottom: 3vh;
+}
 
 
 
@@ -593,6 +661,8 @@ margin-top: -2rem;
 .menu__item:hover {
   background-color: #CFD8DC;
 }
+
+
 
 @media (min-width: 500px){
 

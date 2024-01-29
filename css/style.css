@@ -155,9 +155,7 @@ main{
   margin-top: -10vh;
 }
 
-audio {
-  display: none;
-}
+
 
 .play-button {
   background-color: var(--color-white); 
@@ -178,6 +176,15 @@ audio {
   display: none;
   animation: fadeInOut 0.5s ease-in-out infinite;
 }
+
+audio {
+  display: none;
+}
+
+.audio-player audio {
+  display: none !important;
+}
+
 
 
 /*give that man a medal*/

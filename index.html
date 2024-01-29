@@ -20,18 +20,18 @@
           <li><a class="menu__item" href="#roll">Let's roll</a></li>
           <li><a class="menu__item" href="#train">Own train</a></li>
         </ul>
-        <img class="menu__train" src="./assets/img/nav-train.png">
-        <img class="menu__logo" src="./assets/img/logo.svg">
+        <img class="menu__train" src="./assets/img/nav-train.png" alt="train">
+        <img class="menu__logo" src="./assets/img/logo.svg" alt="logo from trainworld">
       </div>
 
       <section class="header__content">
         <h1>In the beginning...</h1>
         <h2>King Leopold I</h2>
-        <img class="header__img" src="./assets/img/header.svg">
+        <img class="header__img" src="./assets/img/header.svg" alt="colage of Leopold with people and train">
       </section>
 
       <div class="hamburger-menu">
-        <input id="menu__toggle" type="checkbox" />
+        <input id="menu__toggle" type="checkbox">
         <label class="menu__btn" for="menu__toggle">
           <span></span>
         </label>
@@ -44,8 +44,8 @@
             <li><a class="menu__item" href="#roll">Let's roll</a></li>
             <li><a class="menu__item" href="#train">Own train</a></li>
           </ul>
-          <img class="menu__train" src="./assets/img/nav-train.png">
-          <img class="menu__logo" src="./assets/img/logo.svg">
+          <img class="menu__train" src="./assets/img/nav-train.png" alt="train">
+          <img class="menu__logo" src="./assets/img/logo.svg" alt="logo from trainworld">
         </div>
       </div>
 
@@ -53,7 +53,7 @@
 
     <main>
 
-      <section class="intro" id="intro">
+      <div class="intro" id="intro">
         <iframe class="intro__img"
           src="https://lottie.host/embed/9a12bb6c-4f4f-4bfe-aa7a-4da2b5d2e247/Ffx560AeC9.json"></iframe>
         <p class="intro__text">As the very first king of the Belgians it is my pleasure to share my story with you. I
@@ -61,19 +61,17 @@
           experience the Industrial Revolution first-hand. In Great Britain I became inspired. I kept my eye on one man
           in
           particular: George Stephenson. What a genius.</p>
-        <div class="audio-player">
-          <audio controls>
-            <source src="/assets/sound/Amelia_trein_part1.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-          </audio>
-          <button class="play-button" onclick="toggleAudio()">
-            <img class="play__img" src="/assets/img/play-button.png" >
-            <iframe class="play__hidden" src="https://lottie.host/embed/2435f9c8-1c94-4065-b42c-f97cfae60de6/O4A64iDRaL.json" height="20px" width="20px" data-options='{"loop": false}'></iframe>            </button>
+          <div class="audio-player">
+            <audio class="audio" controls>
+              <source src="/assets/sound/Amelia_trein_part1.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <button class="play-button" onclick="toggleAudio()">
+              <img class="play__img" src="/assets/img/play-button.png" alt="play button" >
+              <iframe class="play__hidden" src="https://lottie.host/embed/2435f9c8-1c94-4065-b42c-f97cfae60de6/O4A64iDRaL.json" height="20px" width="20px" data-options='{"loop": false}'></iframe>
+             </button>
+          </div>
       </div>
-        <script>
-
-        </script>
-      </section>
 
 
       <section class="medal" id="medal">
@@ -81,7 +79,7 @@
         <p class="medal__text">Stephenson began his career at Killingworth Pit. As a maintenance engineer he was allowed
           by the managers to
           experiment with the steam engine.</p>
-        <img class="medal__img" src="/assets/img/stephonson.png">
+        <img class="medal__img" src="/assets/img/stephonson.png" alt="stephonson with medal">
 
         <article>
           <h3>1814</h3>
@@ -93,7 +91,7 @@
               Your browser does not support the audio element.
             </audio>
             <button class="play-button" onclick="toggleAudio()">
-              <img class="play__img" src="/assets/img/play-button.png" >
+              <img class="play__img" src="/assets/img/play-button.png" alt="play button">
               <iframe class="play__hidden" src="https://lottie.host/embed/2435f9c8-1c94-4065-b42c-f97cfae60de6/O4A64iDRaL.json" height="20px" width="20px" data-options='{"loop": false}'></iframe>            </button>
           </div>
         </article>
@@ -109,15 +107,15 @@
               Your browser does not support the audio element.
             </audio>
             <button class="play-button" onclick="toggleAudio()">
-              <img class="play__img" src="/assets/img/play-button.png" >
+              <img class="play__img" src="/assets/img/play-button.png" alt="play-button" >
               <iframe class="play__hidden" src="https://lottie.host/embed/2435f9c8-1c94-4065-b42c-f97cfae60de6/O4A64iDRaL.json" height="20px" width="20px" data-options='{"loop": false}'></iframe>            </button>
           </div>
         </article>
       </section>
 
       <div class="train__interaction">
-        <img class="tree__background" src="/assets/img/background_train.png">
-        <img class="train" src="/assets/img/train.png">
+        <img class="tree__background" src="/assets/img/background_train.png" alt="background with trees and landscape">
+        <img class="train" src="/assets/img/train.png" alt="train">
         <iframe class="stones"
           src="https://lottie.host/embed/2908a6d8-6926-44b4-be2f-b1ba3287a79f/6zfgUlEG9j.json"></iframe>
       </div>
@@ -130,7 +128,7 @@
           <source media="(min-width:1200px)" srcset="/assets/img/eggs/leopold/leopold.webp" type="image/webp">
 
           <source media="(min-width:750px)" srcset="/assets/img/eggs/leopold/leopold-250.avif" type="image/avif">
-          <source media="min-width:750px" srcset="/assets/img/eggs/leopold/leopold-250.webp" type="image/webp">
+          <source media="(min-width:750px)" srcset="/assets/img/eggs/leopold/leopold-250.webp" type="image/webp">
 
           <source srcset="/assets/img/eggs/leopold/leopold-500.avif" type="image/avif">
           <source srcset="/assets/img/eggs/leopold/leopold-500.webp" type="image/webp">
@@ -144,12 +142,12 @@
 
           <source media="(min-width:750px)" srcset="/assets/img/eggs/Netherlands/netherlands-250.avif"
             type="image/avif">
-          <source media="min-width:750px" srcset="/assets/img/eggs/Netherlands/netherlands.webp" type="image/webp">
+          <source media="(min-width:750px)" srcset="/assets/img/eggs/Netherlands/netherlands.webp" type="image/webp">
 
           <source srcset="/assets/img/eggs/netherlands/Netherlands-500.avif" type="image/avif">
           <source srcset="/assets/img/eggs/Netherlands/netherlands-500.webp" type="image/webp">
 
-          <img src="/assets/img/leopold.png" alt="Leopold as belgium">
+          <img src="/assets/img/leopold.png" alt="king of the netherlands">
         </picture>
 
         <p class="omelettes__1p">In 1830 Belgium became independent from the Netherlands and I became king. However, the
@@ -177,13 +175,13 @@
               Your browser does not support the audio element.
             </audio>
             <button class="play-button" onclick="toggleAudio()">
-              <img class="play__img" src="/assets/img/play-button.png" >
+              <img class="play__img" src="/assets/img/play-button.png" alt="play button" >
               <iframe class="play__hidden" src="https://lottie.host/embed/2435f9c8-1c94-4065-b42c-f97cfae60de6/O4A64iDRaL.json" height="20px" width="20px" data-options='{"loop": false}'></iframe>            </button>
           </div>
 
           <div class="omelettes__interaction">
-            <img src="/assets/img/egg.png">
-            <img src="/assets/img/milk.png">
+            <img src="/assets/img/egg.png" alt="an egg">
+            <img src="/assets/img/milk.png" alt="milk">
           </div>
 
           
@@ -205,7 +203,7 @@
 
           <source media="(min-width:750px)" srcset="/assets/img/roll/train/rolltrain-250.avif"
             type="image/avif">
-          <source media="min-width:750px" srcset="/assets/img/roll/train/rolltrain.webp" type="image/webp">
+          <source media="(min-width:750px)" srcset="/assets/img/roll/train/rolltrain.webp" type="image/webp">
 
           <source srcset="/assets/img/roll/train/rolltrain-500.avif" type="image/avif">
           <source srcset="/assets/img/roll/train/rolltrain-500.webp" type="image/webp">
@@ -221,7 +219,7 @@
 
           <source media="(min-width:750px)" srcset="/assets/img/roll/phone/phone_train-250.avif"
             type="image/avif">
-          <source media="min-width:750px" srcset="/assets/img/roll/phone/phone_train.webp" type="image/webp">
+          <source media="(min-width:750px)" srcset="/assets/img/roll/phone/phone_train.webp" type="image/webp">
 
           <source srcset="/assets/img/roll/phone/phone_train.avif" type="image/avif">
           <source srcset="/assets/img/roll/phone/phone_train.webp" type="image/webp">
@@ -239,15 +237,15 @@
           new era was about to begin.</p>
           <div class="roll__button">
             <audio controls>
-              <source src="/assets/sound/Amelia_trein_part6.mp3" type="audio/mpeg">
+              <source src="/assets/sound/Amelia_trein_part5.mp3" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
             <button class="play-button" onclick="toggleAudio()">
-              <img class="play__img" src="/assets/img/play-button.png" >
+              <img class="play__img" src="/assets/img/play-button.png" alt="play button">
               <iframe class="play__hidden" src="https://lottie.host/embed/2435f9c8-1c94-4065-b42c-f97cfae60de6/O4A64iDRaL.json" height="20px" width="20px" data-options='{"loop": false}'></iframe>            </button>
           </div>
-          <img class="roll__img" src="/assets/img/trees.png">
-</div>
+          <img class="roll__img" src="/assets/img/trees.png" alt="background off trees">
+        </div>
 
         <p class="roll__names">3 giants: La Flèche (the arrow), the Stephenson and L'Eléphant (the elephant)</p>
 
@@ -282,9 +280,9 @@
               Your browser does not support the audio element.
             </audio>
             <button class="play-button" onclick="toggleAudio()">
-              <img class="play__img" src="/assets/img/play-button.png" >
+              <img class="play__img" src="/assets/img/play-button.png" alt="play button" >
               <iframe class="play__hidden" src="https://lottie.host/embed/2435f9c8-1c94-4065-b42c-f97cfae60de6/O4A64iDRaL.json" height="20px" width="20px" data-options='{"loop": false}'></iframe>            </button>
-          </div>
+          </div> 
       </section>
     </main>
   </div>
@@ -293,7 +291,7 @@
     <a class="tickets" href="https://www.trainworld.be/en">Tickets</a>
     <h2 class="address__title">Address:</h2>
     <p class="address__text"> Pl. Princesse Elisabeth 5,<br> 1030 Schaerbeek</p>
-    <img class="footer__logo" src="./assets/img/logo.svg">
+    <img class="footer__logo" src="./assets/img/logo.svg" alt="logo from trainworld">
 
   </footer>
 

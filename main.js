@@ -4,34 +4,26 @@ import './css/style.css'
 // main.js
 
 document.addEventListener("DOMContentLoaded", function() {
-  function toggleAudio() {
-    var audio = document.querySelector('.audio-player audio');
-    if (audio.paused) {
-      audio.play();
-    } else {
-      audio.pause();
-    }
-  }
-
-  // You can also use event delegation to handle the click event on the play button
-  document.querySelector('.audio-player button.play-button').addEventListener('click', toggleAudio);
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-  function toggleAudio() {
-    var audio = document.querySelector('.audio-player audio');
-    if (audio.paused) {
-      audio.play();
-    } else {
-      audio.pause();
-    }
-  }
-
   // Define toggleAudio in the global scope
-  window.toggleAudio = toggleAudio;
+  window.toggleAudio = function(element) {
+    var audio = element.parentElement.querySelector('audio');
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  };
 
-  // You can also use event delegation to handle the click event on the play button
-  document.querySelector('.audio-player button.play-button').addEventListener('click', toggleAudio);
+  // Use event delegation to handle the click event on any play button
+  document.addEventListener('click', function(event) {
+    var target = event.target;
+
+    // Check if the clicked element has the class 'play-button'
+    if (target.classList.contains('play-button')) {
+      toggleAudio(target);
+    }
+  });
 });
+
 
 

@@ -161,8 +161,8 @@ audio {
 }
 
 .play-button {
-  background-color: var(--color-white); /* Change to your desired background color */
-  color: #ffffff; /* Change to your desired text color */
+  background-color: var(--color-white); 
+  color: #ffffff; 
   border: 2px solid var(--accent-red) ;
   padding: 20px;
   border-radius: 50%;
@@ -662,7 +662,7 @@ margin-bottom: 3vh;
   background-color: #CFD8DC;
 }
 
-.menu__desk{
+.menu__desk, .desk__train{
   display: none;
 }
 
@@ -746,6 +746,11 @@ margin-bottom: 3vh;
     margin:auto;
    }
 
+   .desk__train{
+    display: contents;
+
+   }
+
    .roll__button{
     margin-top: -10rem;
    }
@@ -754,7 +759,7 @@ margin-bottom: 3vh;
 
 /*desktop*/
 @media only screen and (min-width: 1020px){
- .hamburger-menu{
+ .hamburger-menu, .footer__logo{
     position: absolute;
     width: 1px;
     height: 1px;
@@ -765,6 +770,11 @@ margin-bottom: 3vh;
     border: 0;
    
  }
+
+  main{
+  margin-left: 5rem;
+ }
+
  
  .menu__desk{
   background-color: var(--color-white);
@@ -776,8 +786,6 @@ margin-bottom: 3vh;
   width: 100vh;
   height: 5rem;
   transform-origin: left top;
-
-
  }
 
  .menu__sticky{
@@ -792,6 +800,8 @@ margin-bottom: 3vh;
   font-size: var(--step--2);
   width: 4.5rem;
   z-index: 10;
+  color: var(--accent-red
+  );
  }
 
  .menu__train{
@@ -811,12 +821,220 @@ margin-bottom: 3vh;
   margin-left: 5rem;
  }
 
- .intro{
-  margin: 0;
+ .header__content h1{
+  grid-column: 2/4;
  }
 
- main{
-  margin-left: 5rem;
+ .header__content h2{
+  grid-column: 3;
+  margin-left: -5rem;
+  margin-top: 4rem;
  }
+ 
+
+ .intro{
+  margin: 20vh;
+ }
+
+ .intro__img{
+  margin: 0;
+  margin-left: -5rem;
+ }
+
+ .intro__text{
+  max-width:35vw;
+  border-radius: 15px;
+  font-size: var(--step-0);
+  line-height: 2rem;
+ }
+
+ .audio-player{
+  margin: 0;
+  margin-top: 15rem;
+  margin-left: -3rem;
+  z-index: 3000;
+ }
+
+ .medal{
+  margin-left: 5rem;
+  margin-top: -15vh;
+ }
+
+ .medal__title{
+ width: 37vw;
+ line-height: 7rem;
+ font-size: var(--step-5);
+ }
+
+ .medal__img{
+  margin: 0;
+  margin-left: 30vw;
+  height: 90vh;
+ }
+ .medal__text{
+  line-height: 2rem;
+  width: 40vw;
+  margin-top: 3rem;
+  
+ }
+
+ .medal article{
+  margin-top: 30vh;
+  line-height: 2rem;
+  width: 40vw;
+ }
+
+ .medal article p{
+  border-radius: 15px;
+ }
+
+ .medal__button{
+  margin: 0;
+  margin-top: -2rem;
+  margin-left: 37vw;
+ }
+
+ .train__interaction{
+  margin-top: -15vh;
+ }
+
+
+ .train{
+  margin:0;
+  margin-left: 30vw;
+  margin-top: 5vh;
+ }
+
+ .omelettes{
+  margin-top: -20vh;
+ }
+
+ .omelettes__1p{
+  width: 45vw;
+  line-height: 2rem
+ }
+
+ .omelettes__2p{
+  width: 45vw;
+  line-height: 2rem;
+  margin-left: 20rem;
+  margin-top: -5rem;
+ }
+
+ .omelettes__3p{
+  width:35vw;
+
+  margin-left: 30vw;
+  border-radius: 15px;
+  line-height: 2rem;
+ }
+
+ .omelettes__button{
+  margin: 0;
+  margin-left: 65vw;
+ }
+
+ .omelettes__interaction{
+  margin-top: 8rem;
+  width: auto;
+  height: 40vh;
+  justify-content: space-around;
+ }
+
+ .omelettes__end{
+
+  width: 50vw;
+  line-height: 2rem;
+  margin: auto;
+  margin-bottom: -10vh;
+  padding: 0;
+  
+
+ }
+ .roll__train{
+  display: none;
+ }
+
+ .roll h2{
+  margin-top: 5rem;
+  font-size: var(--step-5);
+ }
+
+ .roll__intro{
+  line-height: 2rem;
+  font-size: var(--step-0);
+  width: 50vw;
+  margin-top:2rem;
+ }
+
+ .roll__trees p{
+  padding: 7rem 5rem 7rem 5rem;
+  font-size: var(--step-0);
+  line-height: 2rem;
+  border-radius: 15px;
+  margin: auto;
+  width: 35vw;
+ }
+
+ .roll__button{
+  margin: 0;
+  margin-top: -90vh;
+  margin-left: 43vw;
+ }
+
+ .roll__text{
+   width: 50vw;
+   margin: auto;
+
+   font-size: var(--step-0);
+   line-height: 2rem;
+
+   margin-bottom: 3rem;
+ }
+
+ .own{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+ }
+
+ .own__title{
+  margin-inline: 35vw;
+ }
+
+ .own__text{
+  padding: 7rem 5rem 7rem 5rem;
+  font-size: var(--step-0);
+  line-height: 2rem;
+  border-radius: 15px;
+  margin: auto;
+  width: 35vw;
+ }
+
+footer{
+  margin-left: 5rem;
+  height: 20vh;
+  
+
 }
 
+.tickets{
+  position: relative;
+  margin: 0;
+  height: 2rem;
+  margin-left: 41.5vw;
+  z-index: 8000;
+  transition: ease .2s;
+}
+
+.tickets:hover{
+  background-color: var(--accent-red);
+  color: var(--color-white);
+}
+
+.address__title{
+  margin-top: -5vh;
+}
+
+}

@@ -434,6 +434,9 @@ margin-top: -2rem;
 
   line-height: 1.2rem;
 
+  position: relative;
+  left: 750px;
+
   
 
 }
@@ -969,6 +972,9 @@ margin-bottom: 3vh;
   
 
  }
+
+ 
+
  .roll__train{
   display: none;
  }

@@ -3,20 +3,19 @@ import './css/style.css'
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-/*gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
-gsap.to(".desk__train", {
-  x:50,
+gsap.to(".roll", {
+  x:-750,
   duration: 3,
   scrollTrigger: {
-    trigger: ".roll",
+    trigger: ".omelettes__end",
     start: "top 70%",
     end: "bottom 20%",
     toggleClass: "white",
-    markers: { fontSize: "25px", fontWeight: "bold" },
     scrub: 0.5, //true
   },
-});*/
+});
 
 
 document.addEventListener("DOMContentLoaded", function() {
